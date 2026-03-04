@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int number01; // create variable 1
-    int number02; // create variable 2
+    int n01; // create variable 1
+    int n02; // create variable 2
 
     printf("Let's subtract two numbers!\n");
 
     printf("Type one number:");
-    scanf("%d", &number01);
+    scanf("%d", &n01);
 
     printf("Type another number:");
-    scanf("%d", &number02);
+    scanf("%d", &n02);
 
     // Subtract the two numbers the person typed
 
-    printf("Result: %d", number01 - number02);
+    printf("Result: %d", n01 - n02);
     return 0;
 }
+
