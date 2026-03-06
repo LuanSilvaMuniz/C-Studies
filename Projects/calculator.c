@@ -26,7 +26,7 @@ int main() {
             while(getchar() != '\n');
             continue;
             } else {
-                break;
+              break;
             }
         } 
         
@@ -127,4 +127,5 @@ int main() {
         return 0;
 }
     
+
 
