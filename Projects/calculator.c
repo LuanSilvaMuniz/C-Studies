@@ -26,20 +26,29 @@ int main() {
             while(getchar() != '\n');
             continue;
             } else {
-              break;
+                break;
             }
         } 
-        
+
     switch(operacao) {
         
         case 1: {
             int n1;
             int n2;
 
-            printf("\nChoose two numbers:");
-            scanf("%d %d", &n1, &n2);
+                printf("Choose the first number:");
+                while(scanf(" %d", &n1) != 1) {
+                    printf("Invalid number, type again:");
+                    while(getchar() != '\n');
+                }
 
-            printf("\nResult: %d\n", n1 + n2);
+                printf("Choose the second number:");
+                while(scanf(" %d", &n2) != 1) {
+                    printf("Invalid number, type again:");
+                    while(getchar() != '\n');
+                }
+                printf("\nResult: %d\n", n1 + n2);
+
             break;
         }
 
@@ -47,10 +56,20 @@ int main() {
             int n1;
             int n2;
 
-            printf("\nChoose two numbers:");
-            scanf("%d %d", &n1, &n2);
+                printf("Choose the first number:");
+                while(scanf(" %d", &n1) != 1) {
+                    printf("Invalid number, type again: ");
+                    while(getchar() != '\n');
+                }
 
-            printf("\nResult: %d\n", n1 - n2);
+                printf("Choose the second number:");
+                while(scanf(" %d", &n2) != 1) {
+                    printf("Invalid number, type again:");
+                    while(getchar() != '\n');
+                }
+
+                printf("\nResult: %d\n", n1 - n2);
+
             break;
         }
 
@@ -58,10 +77,20 @@ int main() {
             int n1;
             int n2;
 
-            printf("\nChoose two numbers:");
-            scanf("%d %d", &n1, &n2);
+                printf("Choose the first number:");
+                while(scanf(" %d", &n1) != 1) {
+                    printf("Invalid number, type again:");
+                    while(getchar() != '\n');
+                }
 
-            printf("\nResult: %d\n", n1 * n2);
+                printf("Choose the second number:");
+                while(scanf(" %d", &n2) != 1) {
+                    printf("Invalid number, type again:");
+                    while(getchar() != '\n');
+                }
+
+                printf("\nResult: %d\n", n1 * n2);
+
             break;
         }
         
@@ -74,13 +103,13 @@ int main() {
 
                 printf("Choose the first number:");
                 while(scanf(" %d", &n1) != 1) {
-                    printf("Invalid number, type again:\n");
+                    printf("Invalid number, type again:");
                     while(getchar() != '\n');
                 }
 
                   printf("Choose the second number:");
                 while(scanf(" %d", &n2) != 1) {
-                    printf("Invalid number, type again:\n");
+                    printf("Invalid number, type again:");
                     while(getchar() != '\n');
                 }
 
@@ -103,7 +132,6 @@ int main() {
         case 5:
             printf("Thanks for calculating!\n");
             return 0;
-
         }
 
         while(1){
@@ -121,8 +149,7 @@ int main() {
 
         printf("Invalid answer! Try again!\n");
         while(getchar() != '\n');      
+        }
     }
-    
-}
         return 0;
 }
